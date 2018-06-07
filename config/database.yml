@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: graphql_tut_dev
+
+test:
+  <<: *default
+  database: graphql_tut_test
+
+production:
+  <<: *default
+  database: graphql_tut_prod
