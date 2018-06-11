@@ -1,5 +1,5 @@
 # create user
-ben = User.create(name: 'ben', email: 'ben@gmail.com', password: '12312312')
+ben = User.create(name: 'ben', email: 'ben@gmail.com', password: '123123123')
 
 # create links
 Link.create(url: 'http://graphql.org/', description: 'The Best Query Language', user: ben)
