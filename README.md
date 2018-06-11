@@ -1,24 +1,7 @@
-# README
+# GraphQL Ruby Tutorial
+This is simple example to handle GraphQL for Ruby On Rails server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Documents
+- `graphql-ruby`: http://graphql-ruby.org/. Please use version >= 1.81 (This help us define types, resolvers, mutations with class).
+- `graphiql-rails`: https://github.com/rmosolgo/graphiql-rails.
+- Read more: https://www.howtographql.com/
