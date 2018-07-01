@@ -33,3 +33,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'graphql', '~> 1.8', '>= 1.8.2'
 gem 'graphiql-rails', group: :development
+gem 'graphql-errors'
+gem 'responders'
