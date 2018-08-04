@@ -10,12 +10,14 @@
 #  updated_at      :datetime         not null
 #
 
-class User < ApplicationRecord
-  has_secure_password
+describe User do
+  context 'associations in table' do
+    it { is_expected.to have_many(:votes) }
+    it { is_expected.to have_many(:links) }
+  end
 
-  has_many :votes
-  has_many :links
-
-  validates :name, presence: true
-  validates :email, presence: true, uniqueness: true
+  context 'validate' do
+    it { is_expected.to validate_presence_of(:name) }
+    it { is_expected.to validate_presence_of(:email) }
+  end
 end

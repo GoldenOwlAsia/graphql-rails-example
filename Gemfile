@@ -43,3 +43,5 @@ group :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
 end
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'

@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 9910aa58d92c018abab25d491191576fcc1a7707
+  branch: master
+  specs:
+    faker (1.9.1)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -231,6 +239,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   factory_bot_rails
+  faker!
   graphiql-rails
   graphql (~> 1.8, >= 1.8.2)
   graphql-errors
