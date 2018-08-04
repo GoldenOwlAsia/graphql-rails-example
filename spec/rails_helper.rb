@@ -9,6 +9,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'devise'
 require 'shoulda-matchers'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -59,6 +60,11 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.filter_run :focus
+  config.run_all_when_everything_filtered = true
+  config.include Warden::Test::Helpers
+  Warden.test_mode!
 end
 
 Shoulda::Matchers.configure do |config|
